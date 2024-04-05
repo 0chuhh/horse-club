@@ -1,5 +1,130 @@
 @import url("../layout/header.css");
 
-.main{
-    
+.main {
+	background-color: var(--primary-color);
+	background-image: url("/assets/imgs/main-section-bg.png");
+	background-blend-mode: color-burn;
+}
+
+.main__container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main__city {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	width: 100%;
+	height: 700px;
+	background-image: url("/assets/imgs/city.png");
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main__running-line {
+	width: 100%;
+	height: 60px;
+	background-color: var(--running-line-bg);
+	font-size: 22px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.main__running-line > ul {
+	min-width: 100%;
+	display: flex;
+	flex-shrink: 0;
+	gap: 30px;
+	animation-name: running-line-anim;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.main__running-line > ul > li {
+	white-space: nowrap;
+}
+
+@keyframes running-line-anim {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.main__content {
+	max-width: 542px;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__headline{
+    font-size: 60px;
+	line-height: 110%;
+	text-transform: uppercase;
+}
+
+.main__headline p {
+	padding: 0;
+	margin: 0;
+}
+
+.main__headline p:nth-child(3) {
+	text-align: center;
+}
+
+.main__headline p:last-child {
+	text-align: end;
+}
+
+.main__description {
+    font-size: 18px;
+    font-family: var(--secondary-font-family);
+    text-align: center;
+}
+
+.main__btns {
+	display: flex;
+	gap: 16px;
+}
+
+@media (max-width:992px) {
+	
+}
+
+@media (max-width:768px) {
+	.main__city {
+		background-size: 700px;
+		background-position-x: -285px;
+		background-position-y: 350px;
+	}
+	.main__content {
+		margin-top: 40px;
+		justify-content: flex-start;
+		max-width: 335px;
+	}
+	.main__headline {
+		font-size: 35px;
+	}
+	.main__btns {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media (max-width:448px) {
+	.main__content {
+		align-self: center;
+	}
 }

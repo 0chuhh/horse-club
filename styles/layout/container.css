@@ -1,0 +1,33 @@
+section {
+    width: 100%;
+	height: 700px;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 26px 0;
+    width: 75vw;
+	height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@media (max-width:1366px) {
+    .container{
+        width: 100%;
+        padding: 26px 72px;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        padding: 26px 40px;
+    }
+}
+
+@media (max-width:448px) {
+    .container {
+        padding: 26px 20px;
+    }
+}

@@ -1,0 +1,8 @@
+:root{
+    --primary-font-family:"Merriweather", serif;
+    --secondary-font-family: "Golos Text", sans-serif;
+}
+
+* {
+    font-family: var(--primary-font-family)
+}
