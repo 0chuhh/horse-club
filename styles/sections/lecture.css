@@ -2,6 +2,8 @@
     padding-top: 80px;
 }
 
+
+/* headline */
 .lecture__headline {
     display: flex;
     align-items: center;
@@ -49,4 +51,14 @@
     .lecture__headline {
         flex-direction: column;
     }
+}
+/* headline */
+
+/* event */
+.lecture__event {
+
+}
+
+.lecture__event > img {
+    transform: translateX(-25px);
 }
