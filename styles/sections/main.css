@@ -36,13 +36,11 @@
 }
 
 .main__running-line > ul {
-	min-width: 100%;
 	display: flex;
-	flex-shrink: 0;
 	gap: 30px;
 	animation-name: running-line-anim;
-	animation-duration: 10s;
-	animation-timing-function: ease-in-out;
+	animation-duration: 15s;
+	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 
@@ -105,13 +103,13 @@
 
 @media (max-width:768px) {
 	.main__city {
-		background-size: 700px;
-		background-position-x: -285px;
-		background-position-y: 350px;
+		background-size: 150vw;
+		background-position-y: bottom;
 	}
 	.main__content {
 		margin-top: 40px;
 		justify-content: flex-start;
+		align-self: center;
 		max-width: 335px;
 	}
 	.main__headline {
@@ -124,7 +122,9 @@
 }
 
 @media (max-width:448px) {
-	.main__content {
-		align-self: center;
+	.main__city {
+		background-size: 180vw;
+		background-position-x: -75vw;
+		background-position-y: bottom;
 	}
 }
