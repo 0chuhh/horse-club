@@ -1,0 +1,33 @@
+.running-line {
+	width: 100%;
+	height: 60px;
+	background-color: var(--running-line-bg);
+	font-size: 22px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.running-line > ul {
+	display: flex;
+	gap: 30px;
+	animation-name: running-line-anim;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.running-line > ul > li {
+	white-space: nowrap;
+}
+
+@keyframes running-line-anim {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
