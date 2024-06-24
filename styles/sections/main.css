@@ -2,7 +2,7 @@
 
 .main {
 	background-color: var(--primary-color);
-	background-image: url("./assets/imgs/main-section-bg.png");
+	background-image: url("../../assets/imgs/main-section-bg.png");
 	background-blend-mode: color-burn;
 }
 
@@ -19,7 +19,7 @@
 	z-index: 0;
 	width: 100%;
 	height: 700px;
-	background-image: url("./assets/imgs/city.png");
+	background-image: url("../../assets/imgs/city.png");
 	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
